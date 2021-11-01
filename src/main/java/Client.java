@@ -11,7 +11,6 @@ public class Client {
                 .queryString("q", city)
                 .queryString("appid", "4c780711e462b06d3fcf4b05597693c6")
                 .asJson();
-        System.out.println(jsonNodeHttpResponse.getBody());
         Weather weather = new Weather(jsonNodeHttpResponse);
         weather.GetInfo();
     }
