@@ -5,7 +5,7 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 
 public class Client {
     public static void main(String[] args) throws UnirestException {
-        String city = "Charkiv";
+        String city = "Odessa";
         HttpResponse<JsonNode> jsonNodeHttpResponse = Unirest.get("http://api.openweathermap.org/data/2.5/weather")
                 .header("Accept", "application/json")
                 .queryString("q", city)
